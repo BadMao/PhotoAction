@@ -1,0 +1,67 @@
+PODS:
+  - AFNetworking (2.6.3):
+    - AFNetworking/NSURLConnection (= 2.6.3)
+    - AFNetworking/NSURLSession (= 2.6.3)
+    - AFNetworking/Reachability (= 2.6.3)
+    - AFNetworking/Security (= 2.6.3)
+    - AFNetworking/Serialization (= 2.6.3)
+    - AFNetworking/UIKit (= 2.6.3)
+  - AFNetworking/NSURLConnection (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.3)
+  - AFNetworking/Security (2.6.3)
+  - AFNetworking/Serialization (2.6.3)
+  - AFNetworking/UIKit (2.6.3):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - BaiduMapKit (2.10.2)
+  - DACircularProgress (2.3.1)
+  - GzwTableViewLoading (1.0.0)
+  - HMSegmentedControl (1.5.2)
+  - libqrencode (3.4.2)
+  - MBProgressHUD (0.9.2)
+  - MJRefresh (3.0.8)
+  - MWPhotoBrowser (2.1.2):
+    - DACircularProgress (~> 2.3)
+    - MBProgressHUD (~> 0.9)
+    - SDWebImage (!= 3.7.2, ~> 3.7)
+  - REFrostedViewController (2.4.8)
+  - SDWebImage (3.7.5):
+    - SDWebImage/Core (= 3.7.5)
+  - SDWebImage/Core (3.7.5)
+  - TZImagePickerController (1.0.9)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.6.1)
+  - BaiduMapKit
+  - GzwTableViewLoading (~> 1.0.0)
+  - HMSegmentedControl (~> 1.5.2)
+  - libqrencode (~> 3.4.2)
+  - MBProgressHUD (~> 0.9.1)
+  - MJRefresh (~> 3.0.7)
+  - MWPhotoBrowser
+  - REFrostedViewController (~> 2.4.8)
+  - SDWebImage (~> 3.7.3)
+  - TZImagePickerController (~> 1.0.7)
+
+SPEC CHECKSUMS:
+  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  BaiduMapKit: b1706a062597c70ec62a0cca93212cba1d3017e1
+  DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
+  GzwTableViewLoading: c190cd5ef24cf74635a70246a16fd4aef7acea65
+  HMSegmentedControl: 83b9686022d2176fb6457d2bdb61e5d6393fed7d
+  libqrencode: 43dc34b89af83ea4b07c409cd8e09c87aa3a1c9f
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  MJRefresh: fafde8f18f4afd66b434331a9beb67a6c0264056
+  MWPhotoBrowser: 5836d7aa041dc05a13de380c246826578adc5ea5
+  REFrostedViewController: a893b4979ba1f200c547aef9ff4c3fd5a18f5923
+  SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
+  TZImagePickerController: 56080f944f0ca5a719b91e4540927e1736cff18f
+
+COCOAPODS: 0.39.0

@@ -14,6 +14,11 @@
 		12630B961CDB49EA00A716FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12630B951CDB49EA00A716FF /* Assets.xcassets */; };
 		12630B991CDB49EA00A716FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12630B971CDB49EA00A716FF /* LaunchScreen.storyboard */; };
 		12630BA41CDB49EA00A716FF /* PhotoActionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 12630BA31CDB49EA00A716FF /* PhotoActionTests.m */; };
+		12630BB61CDB4E5A00A716FF /* ImageClips.m in Sources */ = {isa = PBXBuildFile; fileRef = 12630BB01CDB4E5A00A716FF /* ImageClips.m */; };
+		12630BB71CDB4E5A00A716FF /* ImageClips.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12630BB11CDB4E5A00A716FF /* ImageClips.xib */; };
+		12630BB81CDB4E5A00A716FF /* SXPickPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 12630BB31CDB4E5A00A716FF /* SXPickPhoto.m */; };
+		12630BB91CDB4E5A00A716FF /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 12630BB51CDB4E5A00A716FF /* UIImage+Extension.m */; };
+		CFFA78091DAD865D805A407A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC05056EF404B2CA992CBAF6 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,16 @@
 		12630B9F1CDB49EA00A716FF /* PhotoActionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoActionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		12630BA31CDB49EA00A716FF /* PhotoActionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoActionTests.m; sourceTree = "<group>"; };
 		12630BA51CDB49EA00A716FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12630BAF1CDB4E5A00A716FF /* ImageClips.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageClips.h; sourceTree = "<group>"; };
+		12630BB01CDB4E5A00A716FF /* ImageClips.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageClips.m; sourceTree = "<group>"; };
+		12630BB11CDB4E5A00A716FF /* ImageClips.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageClips.xib; sourceTree = "<group>"; };
+		12630BB21CDB4E5A00A716FF /* SXPickPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXPickPhoto.h; sourceTree = "<group>"; };
+		12630BB31CDB4E5A00A716FF /* SXPickPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXPickPhoto.m; sourceTree = "<group>"; };
+		12630BB41CDB4E5A00A716FF /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		12630BB51CDB4E5A00A716FF /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		1377255B65F4EC32C2C9FB02 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		13B26A581A552E1CB7984AFB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		AC05056EF404B2CA992CBAF6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFFA78091DAD865D805A407A /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +82,8 @@
 				12630B881CDB49EA00A716FF /* PhotoAction */,
 				12630BA21CDB49EA00A716FF /* PhotoActionTests */,
 				12630B871CDB49EA00A716FF /* Products */,
+				A843BF86991B2F1580D88713 /* Pods */,
+				77333432E96C470DCF974612 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +99,7 @@
 		12630B881CDB49EA00A716FF /* PhotoAction */ = {
 			isa = PBXGroup;
 			children = (
+				12630BAE1CDB4E5A00A716FF /* Cutphoto */,
 				12630B8C1CDB49EA00A716FF /* AppDelegate.h */,
 				12630B8D1CDB49EA00A716FF /* AppDelegate.m */,
 				12630B8F1CDB49EA00A716FF /* ViewController.h */,
@@ -111,6 +130,37 @@
 			path = PhotoActionTests;
 			sourceTree = "<group>";
 		};
+		12630BAE1CDB4E5A00A716FF /* Cutphoto */ = {
+			isa = PBXGroup;
+			children = (
+				12630BAF1CDB4E5A00A716FF /* ImageClips.h */,
+				12630BB01CDB4E5A00A716FF /* ImageClips.m */,
+				12630BB11CDB4E5A00A716FF /* ImageClips.xib */,
+				12630BB21CDB4E5A00A716FF /* SXPickPhoto.h */,
+				12630BB31CDB4E5A00A716FF /* SXPickPhoto.m */,
+				12630BB41CDB4E5A00A716FF /* UIImage+Extension.h */,
+				12630BB51CDB4E5A00A716FF /* UIImage+Extension.m */,
+			);
+			path = Cutphoto;
+			sourceTree = "<group>";
+		};
+		77333432E96C470DCF974612 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC05056EF404B2CA992CBAF6 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A843BF86991B2F1580D88713 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1377255B65F4EC32C2C9FB02 /* Pods.debug.xcconfig */,
+				13B26A581A552E1CB7984AFB /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -118,9 +168,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 12630BA81CDB49EA00A716FF /* Build configuration list for PBXNativeTarget "PhotoAction" */;
 			buildPhases = (
+				7CC05D22C887B5EC78FC1194 /* Check Pods Manifest.lock */,
 				12630B821CDB49EA00A716FF /* Sources */,
 				12630B831CDB49EA00A716FF /* Frameworks */,
 				12630B841CDB49EA00A716FF /* Resources */,
+				6580132B81F0A9263B04733C /* Embed Pods Frameworks */,
+				4D13150E67CFE3CCA7597D22 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -192,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				12630B991CDB49EA00A716FF /* LaunchScreen.storyboard in Resources */,
+				12630BB71CDB4E5A00A716FF /* ImageClips.xib in Resources */,
 				12630B961CDB49EA00A716FF /* Assets.xcassets in Resources */,
 				12630B941CDB49EA00A716FF /* Main.storyboard in Resources */,
 			);
@@ -206,14 +260,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4D13150E67CFE3CCA7597D22 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6580132B81F0A9263B04733C /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7CC05D22C887B5EC78FC1194 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		12630B821CDB49EA00A716FF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				12630B911CDB49EA00A716FF /* ViewController.m in Sources */,
+				12630BB61CDB4E5A00A716FF /* ImageClips.m in Sources */,
 				12630B8E1CDB49EA00A716FF /* AppDelegate.m in Sources */,
+				12630BB91CDB4E5A00A716FF /* UIImage+Extension.m in Sources */,
 				12630B8B1CDB49EA00A716FF /* main.m in Sources */,
+				12630BB81CDB4E5A00A716FF /* SXPickPhoto.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,10 +442,17 @@
 		};
 		12630BA91CDB49EA00A716FF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1377255B65F4EC32C2C9FB02 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = PhotoAction/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ugiant.PhotoAction;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -348,10 +460,17 @@
 		};
 		12630BAA1CDB49EA00A716FF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13B26A581A552E1CB7984AFB /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = PhotoAction/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ugiant.PhotoAction;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -400,6 +519,7 @@
 				12630BAA1CDB49EA00A716FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		12630BAB1CDB49EA00A716FF /* Build configuration list for PBXNativeTarget "PhotoActionTests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +528,7 @@
 				12630BAD1CDB49EA00A716FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
